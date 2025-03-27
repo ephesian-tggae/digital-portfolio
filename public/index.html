@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script type="module" src="https://js.arcgis.com/calcite-components/2.11.1/calcite.esm.js"></script>
+    <script src="https://kit.fontawesome.com/303e5f7e1f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://js.arcgis.com/calcite-components/2.11.1/calcite.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+  </head>
+  <body>
+    <nav id="desktop-nav">
+        <div class="logo">Ephe Tggae</div>
+        <div>
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Ephe Tggae</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()" >About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()" >Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()" >Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()" >Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./pic/img_batman.JPG" alt="Ephe Tggae profile picture">
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello I'm</p>
+        <h1 class="title">Ephe Tggae</h1>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open()">
+            Space
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="social-container">
+          <a href="//www.linkedin.com/in/ephesian-tggae-54783a205/">
+            <i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/ephesian-tggae">
+            <i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </section>  
+    <section id="about">
+      <p class="section__text__p1"></p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h3>Experience</h3>
+              <p>2+ years</p>
+            </div>
+            <div class="details-container">
+              <h3>Education</h3>
+              <p>Depaul</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>sdfjbajfdks
+              sdvs
+              sdvsdvsdvsd
+              sdvhsdvsv
+              sdvsdvsdv
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Technical Set</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-containers">
+        <div class="about-card-containers">
+          <div class="flip-details-container">
+            <div class="card-container">
+              <div class="front-article-container">
+                <h2 class="experience-sub-title">Frontend Development</h2>
+                <article>
+                  <i class="fa-solid fa-certificate"></i>
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <i class="fa-solid fa-certificate"></i>
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <i class="fa-solid fa-certificate"></i>
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Beginner</p>
+                  </div>
+                </article>
+              </div>
+              <div class="back-article-container">
+                <h2 class="experience-sub-title">Backend Develpment</h2>
+                <article>
+                  <i class="fa-solid fa-certificate"></i>
+                  <div>
+                    <h3>Java</h3>
+                  </div>
+                </article>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btn-rotate">
+        <button id="rotateBtn" onclick="addClick()"><i class="fa-solid fa-arrows-rotate"></i></button>>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
