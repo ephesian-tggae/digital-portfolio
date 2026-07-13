@@ -205,24 +205,24 @@
             <div class="article-container">
               <img
                 src="./pic/project_img.png"
-                alt="To do list project"
+                alt="MovieNest app project"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">To Do List</h2>
+            <h2 class="experience-sub-title project-title">MovieNest</h2>
             <div class="btn-container">
               <!-- <a href="https://github.com/ephesian-tggae">
                 <i class="fa-brands fa-github"></i>
               </a> -->
               <button
                 class="btn btn-color-2 project-btn"
-                onClick="location.href='https://github.com/ephesian-tggae/to-do-list'"
+                onClick="location.href='https://github.com/ephesian-tggae/MovieNest'"
               >
                 Github
               </button>
               <button
-                class="btn btn-color-2 prject-btn"
-                onClick="location.href='https://to-do-list-three-lemon-57.vercel.app/'"
+                class="btn btn-color-2 project-btn"
+                onclick="openDemoModal()"
               >
                 Live Demo
               </button>
@@ -261,6 +261,17 @@
 
     <script src="./src/script.js"></script>
 
+    <div id="demo-modal" class="demo-modal hidden" aria-hidden="true">
+      <div class="demo-modal__backdrop" onclick="closeDemoModal()"></div>
+      <div class="demo-modal__content" role="dialog" aria-labelledby="demo-modal-title">
+        <button class="demo-modal__close" onclick="closeDemoModal()" aria-label="Close demo">&times;</button>
+        <h2 id="demo-modal-title" class="demo-modal__title">MovieNest Live Demo</h2>
+        <video id="demo-video" controls playsinline>
+          <source src="./pic/MovieNest-app.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
 
     <div class="floating-nav">
       <a href="#"><i class="fa-solid fa-house"></i></a>

@@ -5,6 +5,31 @@ function toggleMenu() {
     icon.classList.toggle("open");
 }
 
+function openDemoModal() {
+    const modal = document.getElementById("demo-modal");
+    const video = document.getElementById("demo-video");
+    modal.classList.remove("hidden");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+    video.currentTime = 0;
+    video.play();
+}
+
+function closeDemoModal() {
+    const modal = document.getElementById("demo-modal");
+    const video = document.getElementById("demo-video");
+    modal.classList.add("hidden");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+    video.pause();
+}
+
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+        closeDemoModal();
+    }
+});
+
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".floating-nav a");
 
