@@ -46,10 +46,17 @@
         <h1 class="title">Ephe Tggae</h1>
         <p class="section__text__p2">Software Developer</p>
         <div class="btn-container">
-          <button class="btn btn-color-2" onclick="window.open()">
-            Space
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          <a
+            class="btn btn-color-2"
+            href="./public/Ephesian-B-Tggae-Resume.pdf"
+            download="Ephesian-B-Tggae-Resume.pdf"
+          >
+            Download CV
+          </a>
+          <button
+            class="btn btn-color-1"
+            onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })"
+          >
             Contact Info
           </button>
         </div>
@@ -178,6 +185,12 @@
               >
                 Github
               </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="openDemoModal('Essay Testing System Live Demo', './pic/Final_Demo_Essay_Testing_System.mp4')"
+              >
+                Live Demo
+              </button>
             </div>
           </div>
           <div class="details-container color-container">
@@ -222,7 +235,7 @@
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="openDemoModal()"
+                onclick="openDemoModal('MovieNest Live Demo', './pic/MovieNest-app.mp4')"
               >
                 Live Demo
               </button>
@@ -265,9 +278,8 @@
       <div class="demo-modal__backdrop" onclick="closeDemoModal()"></div>
       <div class="demo-modal__content" role="dialog" aria-labelledby="demo-modal-title">
         <button class="demo-modal__close" onclick="closeDemoModal()" aria-label="Close demo">&times;</button>
-        <h2 id="demo-modal-title" class="demo-modal__title">MovieNest Live Demo</h2>
+        <h2 id="demo-modal-title" class="demo-modal__title">Live Demo</h2>
         <video id="demo-video" controls playsinline>
-          <source src="./pic/MovieNest-app.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>

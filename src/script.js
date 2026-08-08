@@ -5,9 +5,13 @@ function toggleMenu() {
     icon.classList.toggle("open");
 }
 
-function openDemoModal() {
+function openDemoModal(title, videoSrc) {
     const modal = document.getElementById("demo-modal");
     const video = document.getElementById("demo-video");
+    const modalTitle = document.getElementById("demo-modal-title");
+
+    modalTitle.textContent = title;
+    video.src = videoSrc;
     modal.classList.remove("hidden");
     modal.setAttribute("aria-hidden", "false");
     document.body.style.overflow = "hidden";
@@ -22,6 +26,8 @@ function closeDemoModal() {
     modal.setAttribute("aria-hidden", "true");
     document.body.style.overflow = "";
     video.pause();
+    video.removeAttribute("src");
+    video.load();
 }
 
 document.addEventListener("keydown", (e) => {

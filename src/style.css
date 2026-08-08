@@ -231,6 +231,18 @@ i {
     border-radius: 2rem;
 }
 
+a.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+a.btn:hover {
+    text-decoration: none;
+}
+
 .btn-color-1,
 .btn-color-2 {
     border: rgb(53,53,53) 0.1rem solid;
